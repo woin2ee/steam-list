@@ -21,7 +21,18 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.description)
+        
+        // instantiateViewController(withIdentifier:)
+        // : identifier 를 이용하여 스토리보드를 View Controller로 인스턴스화하여 반환
+        guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailVC") else {
+            print("error")
+            return
+        }
+        detailVC.modalTransitionStyle = .coverVertical
+        present(detailVC, animated: true, completion: nil)
+    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -30,27 +41,27 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "myCell")
-
-        var content = cell.defaultContentConfiguration()
-
-        // Configure content.
-        content.image = UIImage(named: "OriAndTheWillOfTheWisps")
-        content.text = "\(indexPath.row)"
-        content.secondaryText = indexPath.description
-        // Customize appearance.
-        content.imageProperties.tintColor = .purple
-        content.imageProperties.maximumSize = CGSize(width: 100, height: 100)
-
-        cell.contentConfiguration = content
+//        let cell = UITableViewCell(style: .default, reuseIdentifier: "myCell")
+//
+//        var content = cell.defaultContentConfiguration()
+//
+//        // Configure content.
+//        content.image = UIImage(named: "OriAndTheWillOfTheWisps")
+//        content.text = "\(indexPath.row)"
+//        content.secondaryText = indexPath.description
+//        // Customize appearance.
+//        content.imageProperties.tintColor = .purple
+//        content.imageProperties.maximumSize = CGSize(width: 100, height: 100)
+//
+//        cell.contentConfiguration = content
         
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "myCustomCell", for: indexPath) as! MyTableViewCell
-//        cell.myLabel.text = indexPath.description
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCustomCell", for: indexPath) as! MyTableViewCell 
+        cell.myLabel.text = indexPath.description
         
         return cell
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
-    }
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 3
+//    }
 }
