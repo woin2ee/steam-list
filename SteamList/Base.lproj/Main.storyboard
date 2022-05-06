@@ -66,18 +66,29 @@
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="109.82142857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="a2w-72-VJO">
             <objects>
-                <viewController storyboardIdentifier="DetailVC" id="D6T-Zr-o1y" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="D6T-Zr-o1y" customClass="DetailViewController" customModule="SteamList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BFW-tz-FWm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vZx-Lb-y03">
-                                <rect key="frame" x="20" y="74" width="374" height="167"/>
+                                <rect key="frame" x="20" y="128" width="374" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC5-hy-X8t">
+                                <rect key="frame" x="20" y="44" width="39" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismissDetailView:" destination="D6T-Zr-o1y" eventType="touchUpInside" id="PnZ-8W-D4s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CXb-j6-E7M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
