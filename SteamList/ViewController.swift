@@ -41,12 +41,12 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let gameListCell = tableView.dequeueReusableCell(withIdentifier: "gameListCell", for: indexPath) as! GameListCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "gameListCell", for: indexPath) as! GameListCell
         
-        gameListCell.name.text = games[indexPath.row].name
-        gameListCell.thumbnail.image = games[indexPath.row].image
+        cell.name.text = games[indexPath.row].name
+        cell.thumbnail.image = games[indexPath.row].image
         
-        return gameListCell
+        return cell
     }
     
 //    func numberOfSections(in tableView: UITableView) -> Int {
