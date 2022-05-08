@@ -13,8 +13,9 @@
 		E85B448D2825108700BC698C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85B448B2825108700BC698C /* Main.storyboard */; };
 		E85B448F2825108800BC698C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85B448E2825108800BC698C /* Assets.xcassets */; };
 		E85B44922825108800BC698C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85B44902825108800BC698C /* LaunchScreen.storyboard */; };
-		E85B449A2825406900BC698C /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B44992825406900BC698C /* MyTableViewCell.swift */; };
+		E85B449A2825406900BC698C /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B44992825406900BC698C /* GameListCell.swift */; };
 		E8D232F8282594A500B8B04C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D232F7282594A500B8B04C /* DetailViewController.swift */; };
+		E8D232FA28263FB300B8B04C /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D232F928263FB300B8B04C /* Games.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		E85B448E2825108800BC698C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E85B44912825108800BC698C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E85B44932825108800BC698C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E85B44992825406900BC698C /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		E85B44992825406900BC698C /* GameListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
 		E8D232F7282594A500B8B04C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E8D232F928263FB300B8B04C /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,12 @@
 		E85B44842825108700BC698C /* SteamList */ = {
 			isa = PBXGroup;
 			children = (
+				E8D232F928263FB300B8B04C /* Games.swift */,
 				E85B44852825108700BC698C /* AppDelegate.swift */,
 				E85B44872825108700BC698C /* SceneDelegate.swift */,
 				E85B44892825108700BC698C /* ViewController.swift */,
 				E8D232F7282594A500B8B04C /* DetailViewController.swift */,
-				E85B44992825406900BC698C /* MyTableViewCell.swift */,
+				E85B44992825406900BC698C /* GameListCell.swift */,
 				E85B448B2825108700BC698C /* Main.storyboard */,
 				E85B448E2825108800BC698C /* Assets.xcassets */,
 				E85B44902825108800BC698C /* LaunchScreen.storyboard */,
@@ -145,7 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E85B448A2825108700BC698C /* ViewController.swift in Sources */,
-				E85B449A2825406900BC698C /* MyTableViewCell.swift in Sources */,
+				E8D232FA28263FB300B8B04C /* Games.swift in Sources */,
+				E85B449A2825406900BC698C /* GameListCell.swift in Sources */,
 				E8D232F8282594A500B8B04C /* DetailViewController.swift in Sources */,
 				E85B44862825108700BC698C /* AppDelegate.swift in Sources */,
 				E85B44882825108700BC698C /* SceneDelegate.swift in Sources */,
