@@ -74,7 +74,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Game List" id="Ez2-XX-guD"/>
                     <connections>
-                        <outlet property="table" destination="Ep5-12-83M" id="LPN-pa-ycW"/>
+                        <outlet property="table" destination="Ep5-12-83M" id="txR-65-D5X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -135,6 +135,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JPy-gx-JGG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vHI-aO-lax">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

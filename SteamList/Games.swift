@@ -5,7 +5,6 @@
 //  Created by Jaewon on 2022/05/07.
 //
 
-import Foundation
 import UIKit
 
 class Games {
