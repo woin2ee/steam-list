@@ -8,15 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var table: UITableView! {
+        didSet {
+            table.dataSource = self
+            table.delegate = self
+        }
+    }
     
     let games = Games.getInstance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        table.dataSource = self
-        table.delegate = self
     }
 }
 
