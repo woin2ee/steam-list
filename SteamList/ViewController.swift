@@ -24,12 +24,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.description)
-        
-        // instantiateViewController(withIdentifier:)
-        // : identifier 를 이용하여 스토리보드를 View Controller로 인스턴스화하여 반환
         guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailVC") else {
-            print("error")
             return
         }
         detailVC.modalTransitionStyle = .coverVertical
